@@ -9,7 +9,7 @@ req_json = request.json()
 
 while True:
     ora = datetime.datetime.now().time()
-    invio = ora.replace(hour = 9, minute = 43, second = 0)
+    invio = ora.replace(hour = 9, minute = 30, second = 0)
     if ora == invio:
         daily_pic = req_json['url']
         if len(req_json['date']+" ~ "+req_json['title']+" ~ Copyright: "+req_json['copyright']+"\n"+req_json['explanation']) > 1024:
