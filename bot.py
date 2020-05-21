@@ -6,7 +6,7 @@ chat_id = canale
 
 while True:
     ora = datetime.datetime.now().time()
-    invio = ora.replace(hour = 10, minute = 0, second = 0)
+    invio = ora.replace(hour = 9, minute = 0, second = 0)
     if ora == invio:
         daily_url = f"https://api.nasa.gov/planetary/apod?api_key={api_key}"
         request = requests.get(daily_url)
